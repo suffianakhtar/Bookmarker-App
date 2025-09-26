@@ -90,3 +90,5 @@ function deleteBookmark(url) {
   localStorage.setItem('bookmarks', JSON.stringify(storedBookmarksArr));
   fetchBookmarks();
 }
+
+window.deleteBookmark = deleteBookmark;
